@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .main {
+            width: 270px;
+            margin: 0 auto;
+            padding: 10px 10px 10px 10px;
+            background-color: rgb(221, 216, 216);
+        }
+
+        .head {
+            display: inline-block;
+            text-align: right;
+            width: 80px;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+
+        .checkbox {
+            margin-top: 20px;
+            margin-left: 85px;
+
+        }
+
+        .btn {
+            margin-top: 20px;
+            margin-left: 85px;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <form action="exp6_1.php" method="post">
+            <span class="title">请输入用户名</span><br>
+            <div class="content1">
+                <label for="username">
+                    <span class="head">用户名: </span>
+                    <input type="text" class="input" name="username" id="username" placeholder="admin" />
+                </label>
+            </div>
+            <div>
+                <label for="password">
+                    <span class="head">密码:</span>
+                    <input type="text" name="password" class="input" id="password" placeholder="123" />
+                </label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="remember[]" value="1"> 记住我一周
+            </div>
+            <div class="btn">
+                <input type="submit" value="登录" class="commit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
