@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp5_2 文件上传存储</title>
+
+    <style type="text/css">
+        .main {
+            width: 400px;
+            margin: 50px auto;
+        }
+ 
+        h2,
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+        <h2>文件上传实验</h2>
+
+        <div class="content">
+            <form action="exp5_2.php" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="MAX_FILE_SIZE" value="5242880">
+                <div>
+                    上传文件：
+                    <input id="input" type="file" name="file[]" accept=".gif,.jpg,.png,.doc,.pdf,.xls,.ppt,.bmp,.html,.php,.js,.txt"> 
+                </div>
+
+                <div>
+                    上传文件：
+                    <input id="input" type="file" name="file[]" accept=".gif,.jpg,.png,.doc,.pdf,.xls,.ppt,.bmp,.html,.php,.js,.txt">
+                </div>
+
+                <div>
+                    上传文件：
+                    <input id="input" type="file" name="file[]" accept=".gif,.jpg,.png,.doc,.pdf,.xls,.ppt,.bmp,.html,.php,.js,.txt">
+                </div>
+
+                <div>
+                    上传文件：
+                    <input id="input" type="file" name="file[]" accept=".gif,.jpg,.png,.doc,.pdf,.xls,.ppt,.bmp,.html,.php,.js,.txt">
+                </div>
+
+                <div>
+                    上传文件：
+                    <input id="input" type="file" name="file[]" accept=".gif,.jpg,.png,.doc,.pdf,.xls,.ppt,.bmp,.html,.php,.js,.txt"> 
+                </div>
+        </div>
+        <input type="submit" value="上传">
+
+        </form>
+    </div>
+</body>
+
+</html>

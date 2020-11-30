@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="header.jpg" alt="">
+        </div>
+        <div class="menu clearfix">
+            <ul>
+                <li><a href="#">学校概况</a><br />Survey</li>
+                <li><a href="#">仲园新闻</a><br />News</li>
+                <li><a href="#">招生信息</a><br />Recruit</li>
+                <li><a href="#">最新公告</a><br />Bulletin</li>
+                <li><a href="#">院系结构</a><br />Hiberarchy</li>
+                <li><a href="#">网络服务</a><br />Service</li>
+                <li><a href="#">联系我们</a><br />Contact</li>
+            </ul>
+
+        </div>
+        <div class="pagebody clearfix">
+            <div class="leftbar">
+                <p class="text">这是左侧栏</p>
+                <p class="text">
+                    为争取社会各界支持办学，促进学校发展，1987年4月，根据国家副主席王震提议，经中共广东省委同意，成立了学校董事会，王震任名誉董事长，广东省省长叶选平任第一届董事会董事长。此后，历届学校董事长均由在任广东省省长担任。董事会成员包含有国家领导人、省部级领导以及港澳知名人士。
+                </p>
+            </div>
+            <div class="content">
+                <p class="text">这是正文</p>
+                <p class="text">
+                    仲恺农业工程学院是一所以农、工学科为优势，农、工、理、经、管、文、艺、法等多学科协调发展的省属本科大学。学校坐落在历史文化名城广州，有海珠、白云两个校区，校园总面积2000余亩。校园集云山之神秀，汇珠水之灵气，是读书治学的理想园地。</P>
+
+                <P class="text">   学校前身为仲恺农工学校，是第一次国共合作时期，近代民主革命先驱何香凝先生等提议、国民党中央为纪念廖仲恺先生爱护农工的意愿而决定创办的。学校于1927年招生，何香凝先生首任校长15年。1984年，经教育部、农牧渔业部批准，学校升格为本科院校，定名“仲恺农业技术学院”，国家副主席王震同志题写校名。2008年3月，经教育部批准，更名“仲恺农业工程学院”。
+                </p>
+            </div>
+            <div class="rightbar">
+                <p class="text">这是右侧栏</p>
+                <p class="text">
+                    近年来，学校被评为广东省依法治校示范校、安全文明校园、全国暑期“三下乡”社会实践先进单位、全国无偿献血贡献奖金奖单位、广东省回乡大学生开展农业科技下乡活动先进单位、广东省青年志愿服务优秀集体，在人才培养和社会服务方面得到了社会广泛认可。
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>粤ICP备05008893号 Copyright ?2008 中国·广东·仲恺农业工程学院 邮编:510225 Tel:+8620-89003114</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<style>
+    #container {
+        width: 921px;
+        margin: 0px auto;
+        font-size: 20px;
+    }
+
+    #header {
+        width: 200px;
+    }
+
+    .menu {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        top: -20px;
+    }
+
+    .menu ul {
+        list-style: none;
+    }
+
+    .menu ul li {
+        width: 110px;
+        float: left;
+        color: #888;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        color: #00f;
+        text-decoration: none;
+    }
+
+    .menu ul li a:hover {
+        color: #f60;
+        font-weight: bold;
+        font-size: 21px;
+    }
+
+    .pagebody {
+        border: red 1px solid;
+        position: relative;
+        top: -20px;
+    }
+
+    .leftbar {
+        width: 220px;
+        height: 300px;
+        float: left;
+        overflow: auto;
+        background-color: #2ae30a;
+    }
+
+    .content {
+        width: 480px;
+        float: left;
+        overflow: hidden;
+        background-color: #f60;
+    }
+
+    .rightbar {
+        width: 218px;
+        height: 250px;
+        float: right;
+        overflow: hidden;
+        background-color: #2ea30a;
+    }
+
+    .footer {
+        width: auto;
+        height: 50px;
+        line-height: 50px;
+        font-size: small;
+        text-align: center;
+        background-color: aqua;
+        clear: both;
+        position: relative;
+        top: -32px;
+    }
+
+    .text {
+        text-indent: 2em;
+        padding: 0 8px;
+    }
+
+    .clearfix {
+        *zoom: 1;
+    }
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+</style>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp5_1 PHP与复选框</title>
+
+    <style type="text/css">
+        .main {
+            width: 278px;
+            margin: 0px auto;
+        }
+
+        .header {
+            display: inline-block;
+            padding-bottom: 20px;
+            border-bottom: 1px gray solid;
+        }
+
+
+        .content {
+            width: 274px;
+            border-bottom: 1px gray solid;
+            padding-bottom: 20px;
+        }
+
+        .footer {
+            padding-bottom: 20px;
+        }
+
+        .footer2 {
+            text-align: center;
+        }
+
+        .price {
+            position: relative;
+            float: right;
+            margin-right: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <form action="exp5_1.php" method="post">
+            <div class="header">
+                <label for="input"> 输入用户名：</label>
+                <input id="input" type="text" name="username" value="">
+            </div>
+
+            <div class="content">
+                <p>请选择灯泡：</p>
+                <input type="checkbox" name="light[]" id="four" value="1">
+                <label for="four">
+                    <span> 4个100瓦灯泡</span>
+                    <span class="price">￥2.00</span>
+                </label>
+                <br>
+
+                <input type="checkbox" name="light[]" id="four" value="2">
+                <label for="four">
+                    <span> 8个100瓦灯泡</span>
+                    <span class="price">￥4.00</span>
+                </label>
+                <br>
+
+                <input type="checkbox" name="light[]" id="four" value="3">
+                <label for="four">
+                    <span> 4个100瓦节能灯泡</span>
+                    <span class="price">￥3.00</span>
+                </label>
+                <br>
+
+                <input type="checkbox" name="light[]" id="four" value="4">
+                <label for="four">
+                    <span> 8个100瓦节能灯泡</span>
+                    <span class="price">￥6.00</span>
+                </label>
+            </div>
+
+            <div class="footer">
+                <p>请选择付款方式:</p>
+                <input type="radio" name="pay" id="1">Visa
+                <input type="radio" name="pay" id="2">MasterCard
+                <input type="radio" name="pay" id="3">银联
+            </div>
+
+            <div class="footer2">
+                <input type="submit" value="提交订单">
+                <input type="reset" value="重置">
+            </div>
+
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>

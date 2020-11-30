@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="exp4_3.php" method="post">
+            <table>
+                <tr>
+                    <td>我的手机号码:</td>
+                    <td><input type="text" name="phone" /></td>
+                </tr>
+                <tr>
+                    <td>创建密码:</td>
+                    <td><input type="password" name="psw" /></td>
+                </tr>
+                <tr>
+                    <td>昵称:</td>
+                    <td><input type="text" name="name" /></td>
+                </tr>
+                <tr>
+                    <td>性别:</td>
+                    <td><input type="radio" name="gender" value="男">男&nbsp;&nbsp;
+                        <input type="radio" name="gender" value="女">女</td>
+                </tr>
+                <tr>
+                    <td>所在地:</td>
+                    <td><select name="city" id="city">
+                            <option value="广州">广州</option>
+                            <option value="深圳">深圳</option>
+                            <option value="东莞">东莞</option>
+                            <option value="珠海">珠海</option>
+                            <option value="汕头">汕头</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>手机验证码:</td>
+                    <td><input type="text" name="checkcode" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="提交" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<style>
+    div {
+        position: absolute;
+        right: 50%;
+    }
+</style>
