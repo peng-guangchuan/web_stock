@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp7_3</title>
+
+    <style type="text/css">
+        .main {
+            width: 700px;
+            margin: 0px auto;
+            border: solid gray 2px;
+        }
+
+        .main h3 {
+            text-align: center;
+        }
+
+        .span_head {
+            display: inline-block;
+            text-align: right;
+            width: 150px;
+            line-height: 30px;
+
+        }
+
+        .input_main {
+            width: 250px;
+            line-height: 27px;
+            color: black;
+            margin: 0px 0px 0px 7px;
+            padding: 0px 0px 0px 5px;
+            font-size: 100%;
+            box-shadow: 1px 1px 1px 1px #f8f6f6 inset;
+        }
+
+        .line,
+        .footer {
+            display: block;
+            margin: 22px;
+        }
+
+        .line_phone {
+            display: block;
+            ;
+            margin: 22px 22px 0px 22px;
+        }
+
+        .line_psw {
+            display: block;
+            ;
+            margin: 10px 22px 22px 22px;
+        }
+
+        .span_select {
+            display: inline-block;
+            margin-left: 8px;
+            border: solid black 1px;
+            padding: 4px 9px 6px 9px;
+        }
+
+        .span_select select {
+            background-color: rgb(206, 221, 221);
+            font-size: 15px;
+        }
+
+        select {
+            width: 85px;
+        }
+
+        #phoneCode {
+            width: 65px;
+        }
+
+        i {
+            color: red;
+        }
+
+        .submin_btn {
+            background-image: url(cofire_btn_head.png);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            border: 0px none;
+        }
+
+        .submin_btn:hover {
+            background-image: url(confire_btn.png);
+        }
+
+        .line_min {
+            display: block;
+            margin: 0px 22px 0px 29px;
+
+        }
+
+        .line_min span {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .line_min p {
+            display: inline-block;
+            font-size: 13px;
+            color: darkgray;
+            line-height: 0px;
+        }
+
+        .error {
+            display: none;
+            background-color: rgb(255, 193, 193);
+            border: solid 1px rgb(224, 133, 133);
+
+        }
+
+        .error img {
+            position: relative;
+            vertical-align: middle;
+            height: 22px;
+            margin-left: 5px;
+            margin-bottom: 1px;
+        }
+
+        .error p {
+            display: inline-block;
+            line-height: 30px;
+            font-size: 13px;
+            margin: 2px;
+            color: red;
+            margin-right: 10px;
+        }
+
+        .correct {
+            display: none;
+            width: 200px;
+            line-height: 30px;
+            font-size: 13px;
+        }
+
+        .correct img {
+            position: relative;
+            vertical-align: middle;
+            width: 13%;
+            margin-left: 5px;
+            margin-bottom: 1px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="content">
+            <form action="" method="">
+                <label class="line_phone" for="phone">
+                    <span class="span_head"> <i>*</i> 我的手机号码:</span>
+                    <!-- onblur 当用户离开input输入框时执行一段Javascript代码 -->
+                    <input class="input_main" type="text" name="phone" id="phone" autofocus="autofocus"
+                        placeholder="输入11位手机号码" onblur="checkPhone()">
+                    <span class="error" id="phoneError_ept"><img src="禁止.png" alt="错误图片">
+                        <p id="phoneError_ept_tips"> </p>
+                    </span>
+                    <span class="correct" id="phoneCorrect"> <img src="正确.png" alt="正确图片"><input type="button"
+                            value="发送验证码"></span>
+                </label>
+
+                <label class="line_min" for="phone_tips">
+                    <span> &nbsp;</span>
+                    <p id="phone_tips">完成注册后，手机号码为你的微博登录名</p>
+                </label>
+
+                <label class="line_psw" for="password">
+                    <span class="span_head"> <i>*</i> 创建密码:</span>
+                    <input class="input_main" type="password" name="password" id="password" placeholder="输入密码不得小于6位"
+                        onblur="checkPws()">
+                    <span class="error" id="pswError"><img src="禁止.png" alt="错误图片">
+                        <p id="pswError_tips"> </p>
+                    </span>
+                    <span class="correct" id="pswCorrect"> <img src="正确.png" alt="正确图片"></span>
+                </label>
+
+                <label class="line" for="name">
+                    <span class="span_head"> <i>*</i> 昵称:</span>
+                    <input class="input_main" type="text" name="name" id="name" placeholder="您的姓名" onblur="checkName()">
+                    <span class="error" id="nameError"><img src="禁止.png" alt="错误图片">
+                        <p id="nameError_tips"> </p>
+                    </span>
+                    <span class="correct" id="nameCorrect"> <img src="正确.png" alt="正确图片"></span>
+                </label>
+
+                <div class="line">
+                    <span class="span_head"> <i>*</i> 性别: </span>
+                    <label for="man">
+                        <span style="width: 2px;display: inline-block;">&nbsp;</span>
+                        <input type="radio" name="gender" id="man" checked="true">男
+                    </label>
+                    <span style="width: 5px;display: inline-block;">&nbsp;</span>
+                    <label for="women">
+                        <input type="radio" name="gender" id="women">女
+                    </label>
+                </div>
+
+                <div class="line">
+                    <span class="span_head"> <i>*</i> 所在地: </span>
+                    <span class="span_select">
+                        <!-- onchange 事件常结合对输入字段的验证来使用 -->
+                        <select name="city" id="city" size="1" onchange="switchCity()">
+                            <option value="0">-请选择-</option>
+                            <option value="北京市">北京市</option>
+                            <option value="上海市">上海市</option>
+                            <option value="广州市">广州市</option>
+                        </select>
+                    </span>
+
+                    <span class="span_select">
+                        <select name="area" id="area" size="1">
+                            <option value="0">-请选择-</option>
+                        </select>
+                    </span>
+                </div>
+
+                <label class="line" for="phoneCode">
+                    <span class="span_head"> <i>*</i> 手机验证码:</span>
+                    <input class="input_main" type="text" name="phoneCode" id="phoneCode" onblur="checkCode()">
+                    <span class="error" id="codeError"><img src="禁止.png" alt="错误图片">
+                        <p id="codeError_tips"> </p>
+                    </span>
+                    <span class="correct" id="codeCorrect"> <img src="正确.png" alt="正确图片"></span>
+                </label>
+
+                <div class="footer">
+                    <span class="span_head">&nbsp;</span>
+                    <input class="submin_btn" type="submit" value="" onclick="checkAll();return false;">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="exp7_3.js"></script>
+
+</body>
+
+</html>
