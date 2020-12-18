@@ -48,25 +48,25 @@
     <div class="main">
         <h3>课程设计题目统计系统</h3>
         <div class="content">
-            <form action="exp6_2.php" method="post">
+            <form action="exp6_2_input.php" method="post">
                 <label class="line" for="sno">
                     <span class="span_head">学生学号:</span>
-                    <input class="input_main" type="text" name="sno" id="sno" placeholder="输入12位学号">
+                    <input class="input_main" type="text" name="sno" id="sno" placeholder="输入12位学号" required="required">
                 </label>
 
-                <label class="line" for="sname">
+                <label class="line" for="name">
                     <span class="span_head">学生姓名:</span>
-                    <input class="input_main" type="text" name="sname" id="sname" placeholder="姓名">
+                    <input class="input_main" type="text" name="name" id="name" placeholder="姓名" required="required">
                 </label>
 
-                <label class="line" for="pws">
+                <label class="line" for="psw">
                     <span class="span_head">修改密码:</span>
-                    <input class="input_main" type="text" name="pws" id="pws" placeholder="首次输入作为后面修改的密码">
+                    <input class="input_main" type="text" name="psw" id="psw" placeholder="首次输入作为后面修改的密码" required="required">
                 </label>
 
                 <label class="line" for="title">
                     <span class="span_head">你的题目:</span>
-                    <input class="input_main" type="text" name="title" id="title" placeholder="按照课程设计题目要求">
+                    <input class="input_main" type="text" name="title" id="title" placeholder="按照课程设计题目要求" required="required">
                 </label>
 
                 <label class="line" for="partner">
@@ -77,11 +77,11 @@
                 <div class="footer1">
                     <span class="span_head">&nbsp;</span>
                     <label for="add">
-                        <input type="radio" name="add" id="add">新增题目
+                        <input type="radio" name="action" id="add" checked="true" value="add">新增题目
                     </label>
                     <span style="width: 15px;display: inline-block;">&nbsp;</span>
                     <label for="modify">
-                        <input type="radio" name="modify" id="modify">修改题目
+                        <input type="radio" name="action" id="modify" value="modify">修改题目
                     </label>
                 </div>
 
@@ -89,7 +89,7 @@
                     <span class="span_head">&nbsp;</span>
                     <input type="submit" value="提交操作">
                     <span style="width: 20px;display: inline-block;">&nbsp;</span>
-                    <a href="show_student.php">显示全部学生题目</a>
+                    <a href="exp6_2_show_student.php">显示全部学生题目</a>
                 </div>
 
             </form>
