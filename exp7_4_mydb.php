@@ -1,5 +1,5 @@
 <?php
-class exp6_2_mydb
+class exp7_4_mydb
 {
     private $db = null; //数据库连接
     private function getConn()

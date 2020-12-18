@@ -1,9 +1,9 @@
 <?php
 //incluce 在用到时加载,require 在一开始就加载,_once 后缀表示已加载的不加载 
 header('content-type:text/html;charset:utf-8');
-require_once('exp6_2_mydb.php');
+require_once('exp7_4_mydb.php');
 $strSQL = 'select * from students order by sno';
-$db = new exp6_2_mydb();
+$db = new exp7_4_mydb();
 $res = $db->execSQL($strSQL);
 ?>
 
@@ -13,7 +13,7 @@ $res = $db->execSQL($strSQL);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exp6_2_studentList</title>
+    <title>exp7_4_studentList</title>
     <style type="text/css">
         * {
             margin: 0;
@@ -73,7 +73,7 @@ $res = $db->execSQL($strSQL);
 <body>
     <div id="main">
         <table>
-            <form action="exp6_2_students_del.php" method="post">
+            <form action="exp7_4_students_del.php" method="post">
                 <tr>
                     <th>删除</th>
                     <th>序号</th>
@@ -125,7 +125,7 @@ $res = $db->execSQL($strSQL);
                 ?>
 
         </table>
-        <p style="margin-top:30px"><a href="exp6_2.html">返回输入界面</a>
+        <p style="margin-top:30px"><a href="exp7_4.html">返回输入界面</a>
             &nbsp;&nbsp;&nbsp;<input type="submit" value="确定删除" /></p>
         </form>
 
@@ -142,8 +142,8 @@ $res = $db->execSQL($strSQL);
                 if ($next != $total_pages) {
                     $next++;
                 }
-                echo '<a href="exp6_2_show_student.php?page=', $pre, '">前一页</a>';
-                printf("<a href=\"exp6_2_show_student.php?page=%d\">后一页</a>", $next);
+                echo '<a href="exp7_4_show_student.php?page=', $pre, '">前一页</a>';
+                printf("<a href=\"exp7_4_show_student.php?page=%d\">后一页</a>", $next);
                 ?>
             </form>
         </div>

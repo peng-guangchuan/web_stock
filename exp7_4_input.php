@@ -2,11 +2,11 @@
 header('content-type:text/html;charset:utf-8');
 
 if (!isset($_POST['sno'])) {
-    header('Location:exp6_2_error.html');
+    header('Location:exp7_4_error.html');
 }
 
-require_once('exp6_2_mydb.php');
-$db = new exp6_2_mydb();
+require_once('exp7_4_mydb.php');
+$db = new exp7_4_mydb();
 
 $sno = $_POST['sno'];
 $name = $_POST['name'];
@@ -24,7 +24,7 @@ if($action == 'add'){
     $resaf = $db->getAffectedRows();
     if( !$res || !$resaf ){
         echo "<p>学号{$sno}已被注册！</p>";
-        include_once('exp6_2_error.html');
+        include_once('exp7_4_error.html');
         exit;
     }
     echo "<p>题目已新增！</p>";
@@ -33,9 +33,9 @@ if($action == 'add'){
     $resaf = $db->getAffectedRows();
     if (!$res || !$resaf){
         echo "<p>学号或密码错误！</p>";
-        include_once('exp6_2_error.html');
+        include_once('exp7_4_error.html');
         exit;
     }
     echo "<p>题目修改成功！</p>";
 }
-include('exp6_2_show_student.php');
+include('exp7_4_show_student.php');
