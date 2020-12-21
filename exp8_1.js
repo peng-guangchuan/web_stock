@@ -1,0 +1,16 @@
+$(function(){
+    $('#btn1').click(function(){
+        $('tr:even').css('background-color',"goldenrod");
+        $('tr:first-child').css({'background-color':"green",'color':"blue"});
+    });
+    $('#btn2').click(function(){
+        $('tr:even').addClass("even");
+        $('tr:first-child').addClass("first");
+    });
+    $('#btn3').click(function(){
+        $('tr:even').removeClass("even");
+        $('tr:first-child').removeClass("first");
+        $('tr:even').css('background-color',"");
+        $('tr:first-child').css({'background-color':"",'color':""});
+    });
+});

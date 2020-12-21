@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp8_1</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        #main {
+            width: 350px;
+            min-height: 400px;
+            margin: 40px auto;
+            padding: 18px;
+            font-size: 16px;
+        }
+
+        table {
+            width: 350px;
+            cursor: pointer;
+            border: solid 1px;
+        }
+
+        td,
+        th {
+            padding: 5px 5px 5px 5px;
+            text-align: center;
+            border: solid 1px;
+        }
+
+        .even {
+            background-color: goldenrod;
+        }
+
+        .first {
+            color: blue;
+            background-color: green;
+        }
+    </style>
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="main">
+        <table id="myTab">
+            <caption>汽车销售</caption>
+            <tr>
+                <th>商品名称</th>
+                <th>单位</th>
+                <th>零售价格</th>
+            </tr>
+            <tr>
+                <td>奥迪A6</td>
+                <td>万元/辆</td>
+                <td>30.8</td>
+            </tr>
+            <tr>
+                <td>别克君威</td>
+                <td>万元/辆</td>
+                <td>17.8</td>
+            </tr>
+            <tr>
+                <td>尼桑天籁</td>
+                <td>万元/辆</td>
+                <td>18.8</td>
+            </tr>
+            <tr>
+                <td>马自达6</td>
+                <td>万元/辆</td>
+                <td>16.8</td>
+            </tr>
+            <tr>
+                <td>马自达3</td>
+                <td>万元/辆</td>
+                <td>14.8</td>
+            </tr>
+        </table>
+        <p>
+            <input type="button" value="使用CSS属性设置" id="btn1">
+            <input type="button" value="使用CSS类样式设置" id="btn2">
+            <input type="button" value="恢复原样" id="btn3">
+        </p>
+    </div>
+
+    <script src="exp8_1.js"></script>
+</body>
+
+</html>

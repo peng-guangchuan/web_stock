@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp8_2</title>
+
+    <style type="text/css">
+        #main {
+            width: 500px;
+            height: 500px;
+            border: solid 2px;
+            margin: 0px auto;
+            margin-top: 40px;
+            font-size: 16px;
+            font-family: 宋体;
+        }
+
+        #main p {
+            margin: 20px 0px 0px 20px;
+            padding: 0px;
+
+        }
+
+        #main ul {
+            margin-top: 2px;
+        }
+
+        #main ul li {
+            padding: 0px 0px 0px 13px;
+        }
+
+        #float {
+            position: absolute;
+            display: none;
+            background-color: #77eeee;
+            border: solid 3px #339955;
+            width: 70px;
+            left: 0px;
+            top: 0px;
+        }
+
+        #float ul {
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        #float li {
+            padding: 6px 0px 6px 15px;
+            font-size: 18px;
+            list-style: none;
+            border-bottom: dashed 1px;
+        }
+
+        #float li:hover {
+            background-color: #ee7777;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+    <div id="main" onmousedown="PopMenu(event)">
+        <p> 城市列表：</p>
+        <ul>
+            <li>广州</li>
+            <li>深圳</li>
+            <li>珠海</li>
+        </ul>
+    </div>
+    <div id="float">
+        <ul>
+            <li onclick="AddItem();">添加</li>
+            <li>删除</li>
+            <li>修改</li>
+            <li>查询</li>
+        </ul>
+    </div>
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="exp8_2.js"></script>
+</body>
+
+</html>
