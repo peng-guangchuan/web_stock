@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp9_1</title>
+
+    <style type="text/css">
+        .main {
+            width: 400px;
+            margin: 0px auto;
+            margin-top: 10px;
+        }
+
+        .rows {
+            height: 35px;
+        }
+
+        .title {
+            display: inline-block;
+            width: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <form id="myForm" action="exp9_1_2.php">
+            <div class="rows">
+                <label for="user">
+                    <span class="title">姓名：</span>
+                    <input type="text" class="ipt" id="user" name="user">
+                    <span id="user_tips"></span>
+                </label>
+            </div>
+            <div class="rows">
+                <label for="gender">
+                    <span class="title">性别：</span>
+                    <select name="gender" id="gender">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </label>
+            </div>
+            <div class="rows">
+                <label for="psw">
+                    <span class="title">密码：</span>
+                    <input type="password" name="psw" id="psw" class="ipt">
+                </label>
+            </div>
+            <div class="rows">
+                <label for="btn">
+                    <span class="title"> &nbsp; </span>
+                    <input type="button" value="注册" class="btn" id="btn" onclick="sendForm();">
+                </label>
+            </div>
+        </form>
+
+        <div id="res">
+
+        </div>
+    </div>
+
+    <script src="exp9_1.js"></script>
+</body>
+
+</html>
