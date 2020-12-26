@@ -1,6 +1,6 @@
 <?php
 header('content-type:text/html;charset:utf-8');
-
+//https://zhidao.baidu.com/question/506664297.html
 $data = file_get_contents('exp9_2_data.txt');
 $votes = explode(",", $data); //按照逗号分割成字符串数组
 //print_r($votes);  Array ( [0] => 0 [1] => 0 [2] => 0 )

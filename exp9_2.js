@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var flowerid = 0;
-    var times = 86400;
+    //var times = 86400;
 
     $.ajax({
         url: 'exp9_2.php',
