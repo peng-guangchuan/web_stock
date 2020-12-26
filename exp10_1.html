@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp10_1</title>
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style type="text/css">
+        select {
+            width: 80px;
+            font-size: 15px;
+        }
+
+        .main {
+            border: solid 1px;
+            width: 350px;
+            margin: 0px auto; 
+            padding: 20px 0px 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="footer">
+            <span>请选择省份</span>
+            <select name="province" id="province">
+                <option value="0">-请选择-</option>
+                <option value="1">广东省</option>
+                <option value="2">四川省</option>
+                <option value="3">湖北省</option>
+            </select>
+            <span> &nbsp; &nbsp; </span>
+            <span>城市</span>
+            <select name="city" id="city">
+                <option value="0">-请选择-</option>
+            </select>
+        </div>
+        <p>总面积：<span id="area">0</span>平方公里</p>
+        <p>总人口：<span id="pop">0</span>万人</p>
+    </div>
+
+    <script src="exp10_1.js"></script>
+</body>
+
+</html>
