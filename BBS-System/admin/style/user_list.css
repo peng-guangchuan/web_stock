@@ -1,0 +1,30 @@
+/* 用户列表和管理员列表 */
+.user_list{
+	margin:30px auto;
+	width:90%;
+	font-size:16px;
+}
+.user_list tr:nth-child(odd){
+	background-color:lime;
+}
+.user_list tr:nth-child(1){
+	background-color:yellow;
+	color:red;
+	font-weight:bold;
+}
+.user_list table,td,th{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+.user_list table{
+	text-align:center;
+	vertical-align:middle;
+	width:100%;
+}
+.user_list tr{
+	height:40px;
+}
+.user_list .pages{
+	margin-top: 20px;
+	width: 30px;
+}

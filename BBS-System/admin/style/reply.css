@@ -1,0 +1,46 @@
+/* 反馈和帖子 */
+
+.right {
+    margin-left: 250px;
+    margin-top: 30px;
+}
+.right .title {
+    width:100%;
+    height:30px;
+    line-height:30px;
+    text-indent:10px;
+    background:#e6e6e6;
+    color:#666;
+    font-weight:bold;
+}
+table.list tr {
+    height:50px;
+    background:url(hr.png) 0px bottom repeat-x;
+}
+table.list tr th {
+    padding-right:40px;
+    text-align:center;
+}
+table.list tr td {
+    width:200px;
+    padding-right:40px;
+    text-align: center;
+}
+table.au input {
+    width:300px;
+    height:25px;
+}
+table.au textarea {
+    width:300px;
+    height:100px;
+}
+table.au tr {
+    background:url(hr.png) 0px bottom repeat-x;
+}
+table.au tr td {
+    text-align:left;
+    padding:10px 40px 20px 0;
+}
+table.au tr td.condition {
+    color:#999;
+}

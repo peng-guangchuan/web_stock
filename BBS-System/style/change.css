@@ -1,0 +1,49 @@
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: #F0E68C;
+        }
+        .changepassword{
+            margin: 120px auto;
+            width: fit-content;
+            background:#6495ED;
+            padding:80px;
+            border: #6B8E23 10px double;
+            border-radius:15px;
+        }
+        .changepassword span{
+            font-size: 25px;
+            font-family: "隶书";
+            font-weight:bold;
+            color: #666666;
+        }
+        .changepassword input{
+            width: 160px;
+            height: 28px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            padding-left: 5px;
+            background:	#FFFAF0;
+        }
+        .changepassword input[type="submit"]{
+            font-family:"隶书";
+            width: 230px;
+            height: 35px;
+            margin-left:50px;
+            background-color:#0c6cac;
+            line-height:35px;
+            border-radius:10px;
+            font-size: 27px;
+        }
+        input[type="reset"]{
+            font-family:"隶书";
+            width: 230px;
+            height: 35px;
+            margin-left:50px;
+            background-color:#0c6cac;
+            line-height:35px;
+            border-radius:10px;
+            font-size: 27px;
+        }
