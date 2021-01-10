@@ -42,72 +42,12 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
         <meta charset="utf-8">  
-        <title>用户注册</title>
-        <style>
-            *{margin: 0px;padding: 0px;}
-            body{
-                background: url(style/login-bg.png);
-                width: 100%;
-                height: 100%;
-            }
-            .main {
-                margin: 0 auto;
-                text-align: center;
-                height: 700px;
-				width: 1500px;
-            }
-            .logo{
-                padding-top: 20px;
-                margin: 0 auto;
-            }
-            .login-box {
-                width: 320px;
-                height: 82px;
-                border-radius: 8px;
-                -webkit-border-radius: 8px;
-                margin: 20px auto;
-                background-color: #dde6ea;
-                border: 2px solid #fff;
-                cursor: pointer;
-			}
-			.bottom{
-				margin-top: 40px;
-				text-align:center;
-			}
-			.bottom span{
-				font-size: 25px;
-				font-family: "隶书";
-				color: fffff;
-				padding-left:20px;
-			}
-			.bottom input{
-				width: 180px;
-				height: 28px;
-				background-color:#ccc;
-				font-size: 20px;
-				border: 1px solid #ccc;
-				padding-left: 5px;
-			}
-			.btn {
-				font-family:"隶书";
-				font-size:25px;
-                display: block;
-                width: 320px;
-                height: 40px;
-                color: #fffff;
-                background-color: #2a799f;
-                border-radius: 8px;
-                -webkit-border-radius: 8px;
-                margin: 10px auto;
-                line-height: 40px;
-                cursor: pointer;
-                border: 1px solid #598fab;
-            }
-		</style>
+		<title>用户注册</title>
+		<link rel="stylesheet" type="text/css" href="style/registers.css"/>
 	</head>
 	<body>
 		<div class="main ">

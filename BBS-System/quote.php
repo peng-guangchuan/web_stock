@@ -10,7 +10,6 @@ if (!$member_id = is_login($link)){
     header("Location: login.php");
 }
 //这句验证要加上，确保导航栏的正确性，未登陆时能观看别人的贴子以及回复，但是自己不能回复，直接跳到登陆页面
-
 ?>
 
 <?php
@@ -38,23 +37,22 @@ $member_data = mysqli_fetch_assoc($member_result);
 ?>
 
 <?php
-
 $reply_content['null'] = null;
-if (isset($_POST['submit'])){
-    if ($_POST['content']==''){
-        $reply_content['null'] = "yes";
+    if (isset($_POST['submit'])){
+        if ($_POST['content']==''){
+            $reply_content['null'] = "yes";
+        }
+        else{
+            $query = "select * from sfk_member where name='{$_COOKIE['sfk']['name']}'";
+            $result_member = execute($link,$query);
+            $data_member = mysqli_fetch_assoc($result_member);
+    //    获取回复引用的id号
+            $query = "insert into sfk_reply(content_id,quote_id, content, time, member_id) values (
+    '{$data_all['cid']}','{$_GET['id']}','{$_POST['content']}',now(),'{$data_member['id']}')";
+            execute($link,$query);
+            $reply_content['null'] = 'no';
+        }
     }
-    else{
-        $query = "select * from sfk_member where name='{$_COOKIE['sfk']['name']}'";
-        $result_member = execute($link,$query);
-        $data_member = mysqli_fetch_assoc($result_member);
-//    获取回复引用的id号
-        $query = "insert into sfk_reply(content_id,quote_id, content, time, member_id) values (
-'{$data_all['cid']}','{$_GET['id']}','{$_POST['content']}',now(),'{$data_member['id']}')";
-        execute($link,$query);
-        $reply_content['null'] = 'no';
-    }
-}
 ?>
 
 <?php include_once 'inc/header.inc.php'?>;

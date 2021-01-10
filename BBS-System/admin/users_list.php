@@ -18,7 +18,7 @@ $delete['success'] = null;
 
     }
 ?>
-<?php include 'inc/header.inc.php '?>
+<?php include_once 'inc/header.inc.php '?>
 <div id = "right">
     <div class="title">子版块列表</div>
     <link rel="stylesheet" type="text/css" href="style/user_list.css" />

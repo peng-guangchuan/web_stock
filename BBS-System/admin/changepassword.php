@@ -41,7 +41,7 @@ $template['title']='修改密码';
         }
     }
 ?>
-<?php include 'inc/header.inc.php'?>
+<?php include_once 'inc/header.inc.php'?>
 <link rel="stylesheet" type="text/css" href="style/changepassword.css"/>
 <div id = "right">
     <div class="title">修改密码</div>

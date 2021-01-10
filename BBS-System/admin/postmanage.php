@@ -17,7 +17,7 @@ $delete['success'] = null;
         }
     }
 ?>
-<?php include 'inc/header.inc.php '?>
+<?php include_once 'inc/header.inc.php '?>
 <link rel="stylesheet" type="text/css" href="style/reply.css" />
 <div class = "right">
     <div class="title">帖子管理</div>

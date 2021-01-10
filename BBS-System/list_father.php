@@ -13,7 +13,7 @@ $member_id = is_login($link);
 <?php
 $father_data = null;
 if (isset($_GET['id'])||$_GET['id']=64){
-//    默认进入汽车父板块！！！
+//    默认进入父板块！！！
     $query = "select * from sfk_father_module where id='{$_GET['id']}'";
     $father_result = execute($link,$query);
     if (mysqli_num_rows($father_result)==1){
@@ -28,7 +28,7 @@ if (isset($_GET['id'])){
     $son_result = execute($link,$query);
     while ($son_data = mysqli_fetch_assoc($son_result)){
         $son_id.=$son_data['id'].",";
-        $son_all_module.="<a href='list_son.php?id={$son_data['id']}'>".$son_data['module_name']." </a>";
+        $son_all_module.="<a href='list_son.php?id={$son_data['id']}'>".$son_data['module_name']." &emsp;</a>";
     }
 //    trim不改变son_id的值
     $son_id = trim($son_id,',');
@@ -130,7 +130,6 @@ while ($data_content = mysqli_fetch_assoc($result_content)){
     <?php }?>
         </ul>
         <div class="pages_wrap">
-            <a class="btn publish" href="publish.php?id=<?php echo $father_data['id']?>"></a>
             <div class="pages">
                 <?php
                 $page = page($data_count[0],3,3);

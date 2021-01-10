@@ -31,7 +31,7 @@ if (isset($_POST['submit']))
 
 $template['title']="添加父板块";
 ?>
-<?php include 'inc/header.inc.php'?>
+<?php include_once 'inc/header.inc.php'?>
 <div id="right">
     <div class="title">添加父版块</div>
     <div class="father_m_add">

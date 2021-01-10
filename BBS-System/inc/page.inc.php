@@ -35,10 +35,6 @@ function page($count,$page_size,$btn_num,$page='p'){
     */
     if (isset($arr_current['query'])){
         parse_str($arr_current['query'],$arr_query);
-        /* http://localhost/test.php?page=8&id=2
-        var_dump($arr_query);
-     'page' => string '8' (length=1)
-      'id' => string '2' (length=1)*/
         unset($arr_query[$page]);
         if (empty($arr_query)){
             $url = "{$current_path}?{$page}=";

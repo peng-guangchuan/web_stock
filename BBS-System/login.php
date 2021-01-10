@@ -26,99 +26,12 @@ if (isset($_POST['submit'])){
     }
 }
 ?>
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
         <meta charset="utf-8">  
         <title>用户登录</title>
-        <style>
-            *{margin: 0px;padding: 0px;}
-            body{
-                background: url(style/login-bg.png);
-                width: 100%;
-                height: 100%;
-            }
-            .main {
-                margin: 0 auto;
-                text-align: center;
-                height: 700px;
-                width: 500px;
-            }
-            .logo{
-                padding-top: 100px;
-                margin: 0 auto;
-            }
-            .login-box {
-                width: 320px;
-                height: 82px;
-                border-radius: 8px;
-                -webkit-border-radius: 8px;
-                margin: 20px auto;
-                background-color: #dde6ea;
-                border: 2px solid #fff;
-                cursor: pointer;
-            }
-            .name {
-                width: 100%;
-                height: 40px;
-                border-radius: 8px;
-            }
-            .name input {
-                width: 90%;
-                height: 40px;
-                outline: none;
-                border: none;
-                background-color: transparent;
-                border-radius: 8px;
-                -webkit-border-radius: 8px;
-                margin-left: 5%;
-            }
-            .pwd {
-                width: 100%;
-                height: 40px;
-                border-radius: 8px;
-                -webkit-border-radius: 8px;
-            }
-
-            .pwd input {
-                width: 90%;
-                height: 40px;
-                outline: none;
-                border: none;
-                background-color: transparent;
-                border-radius: 8px;
-                -webkit-border-radius: 8px;
-                margin-left: 5%;
-            }
-            .btn {
-                font-family:"隶书";
-				font-size:25px;
-                display: block;
-                width: 320px;
-                height: 40px;
-                color: #fffff;
-                background-color: #2a799f;
-                border-radius: 8px;
-                -webkit-border-radius: 8px;
-                margin: 10px auto;
-                line-height: 40px;
-                cursor: pointer;
-                border: 1px solid #598fab;
-            }
-            .register {
-                background-image: url(style/forget.png);
-                margin: 40px auto;
-            }
-            .register-new:hover {
-                color: #fff;
-            }
-            .register-new {
-                color: #c1c8d1;
-                padding-top: 20px;
-                padding-left: 290px;              
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style/login.css"/>
     </head>
 	<body>
 		<div class="main ">
