@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exp10_2</title>
+
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.9.10/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.9.10/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.9.10/demo/demo.css">
+    <script type="text/javascript" src="jquery-easyui-1.9.10/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-easyui-1.9.10/jquery.easyui.min.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <input class="easyui-slider" id="ss" min="100" max="400" value="200" style="width:400px" data-options="
+        showTip: true,
+        rule: [100,'|',150,'|',200,'|',250,'|',300,'|',350,'|',400],
+        tipFormatter: function(value){
+            return value+'px';
+        }">
+    </center>
+    <div style="margin-bottom:20px"></div>
+    <center>
+        <div class="easyui-resizable" id="rr" style="width:200px;height:200px;border:1px solid #ccc;">
+            <div style="padding:5px">Resize Me <br>最小尺寸100*100 <br>最大尺寸400*400 </div>
+        </div>
+    </center>
+
+
+</body>
+<script type="text/javascript">
+$('#rr').resizable({
+    disabled:true,
+    minWidth:100,
+    minHeight:400,
+    maxWidth:100,
+    maxHeight:400
+});
+$('#ss').slider({
+    onChange: function(value){
+            $('#rr').css({'width':value,'height':value});
+
+        }
+
+});
+</script>
+
+</html>
